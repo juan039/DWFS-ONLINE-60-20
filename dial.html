@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dial Radio</h1>
+    <script>
+        var dial = parseFloat(prompt('Ingresar Dial'));
+        if (((dial * 10) % 2) == 1 && dial < 107.9 && dial >= 89.9) {
+            alert('El dia existe');
+        } else {
+            alert('El dial no existe');
+        }
+
+        // if (((dial * 10) % 2) == 1) {
+        //     if (dial < 107.9) {
+        //         if (dial >= 89.9) {
+        //             alert('El dia existe');
+        //         } else {
+        //             alert('El dial no existe');
+        //         }
+        //     } else {
+        //         alert('El dial no existe');
+        //     }
+        // } else {
+        //     alert('El dial no existe');
+        // }
+    </script>
+</body>
+</html>

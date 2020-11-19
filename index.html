@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Estamos al aire!
+    </h1>
+    <script>
+        var num1 = parseInt(prompt('Ingrese el primer número. ej: 1'));
+        console.log(typeof(num1));
+        var num2 = parseInt(prompt('Ingrese el segundo número'));
+        // if (isNaN(num1) || isNaN(num2)) {
+        //     alert('No usar texto, escribir en formato numerico')
+        // } else {
+        //     var result = num1 + num2;
+        //     alert('La suma de los números es: ' + result);
+        // }
+
+        if (!isNaN(num1) && !isNaN(num2)) {
+            var result = num1 + num2;
+            alert('La suma de los números es: ' + result);
+        } else {
+            alert('No usar texto, escribir en formato numerico')
+        }
+    </script>
+</body>
+</html>

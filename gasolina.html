@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>¿llegá?</h1>
+    <script>
+        var consumo = 15; // Km/l
+        var capacidad = 45; // l
+        var distancia = parseInt(prompt('Ingrese la distancia a recorrer'));
+        if (isNaN(distancia)) {
+            alert('la distancia a recorrer debe indicarse en numeros');
+        } else {
+            if (distancia > (consumo * capacidad)) {
+                alert('Necesita abastecerse');
+            } else {
+                alert('Con un tanque llega a cumplir la distancia');
+            }
+        }
+    </script>
+</body>
+</html>
